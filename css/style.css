@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+main{
+    background-color: antiquewhite;
+    padding: 2rem;
+    height: 100%;
+}
+.seccion-todo{
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: white;
+}
+.seccion-imagen{
+    width: 100%;
+}
+figure .imagen1{
+    width: 100%;
+}
+figure .imagen2{
+    display: none;
+}
+.seccion-informacion{
+    padding: 0 3rem;
+}
+.seccion-informacion h1{
+    font-size: 4rem;
+    color: rgb(33, 33, 33);
+    margin-bottom: 2rem;
+}
+.seccion-informacion .titulo{
+    font-size: 1.3rem;
+    padding: 1rem 0rem;
+}
+.seccion-informacion p{
+    font-size: 2rem;
+    color: gray;
+    line-height: 3rem;
+}
+.seccion-informacion .precios{
+    display: flex;
+    margin: 2rem 0;
+}
+.seccion-informacion .precios h2{
+    color: rgb(57, 122, 57);
+    font-size: 3.5rem;
+    margin-right: 2rem;
+}
+.seccion-informacion .precios p{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.seccion-informacion button{
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 5rem;
+    background-color:  rgb(86, 149, 123);
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.seccion-informacion button img{
+    padding-right: 1rem;
+}
+@media (min-width:660px){
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .seccion-todo{
+        width: 600px;
+        height: 450px;
+        display: flex;
+    }
+    .seccion-imagen{
+        width: 50%;
+    }
+    .seccion-imagen figure .imagen1{
+        display: none;
+    }
+    .seccion-imagen figure .imagen2{
+        display: block;
+        width: 100%;
+        height: 450px;
+    }
+    .seccion-informacion{
+        width: 50%;
+    }
+    .seccion-informacion p{
+        margin-top: 1.5rem;
+    }
+    .seccion-informacion h1{
+        line-height: 3rem;
+        font-size: 3.7rem;
+    }
+    .seccion-informacion p{
+        font-size: 1.8rem;
+    }
+    .seccion-informacion .precios p{
+        margin: 0;
+    }
+    .seccion-informacion button:hover{
+        cursor: pointer;
+        background-color: rgb(7, 56, 7);
+    }
+}
